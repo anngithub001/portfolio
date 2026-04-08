@@ -130,12 +130,11 @@ header {
   width: 100%; 
   max-width: 400px;
   border-radius: 20px;
-  filter: grayscale(100%) brightness(90%);
+  filter: grayscale(100%) brightness(70%) blur(1px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.5);
   transition: 0.5s;
 }
-body.light-mode .hero-img img { filter: grayscale(0%) brightness(100%); }
-.hero-img:hover img { filter: grayscale(0%); transform: scale(1.02); }
+body.light-mode .hero-img img { filter: grayscale(100%) brightness(80%) blur(1px); }
 
 .hero-img::after {
   content:""; position: absolute; top:0; left:0; right:0; bottom:0;
