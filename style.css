@@ -11,6 +11,16 @@
   --accent-hover: #08fff1;
 }
 
+body.light-mode {
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --card-bg: #fff;
+  --header-bg: rgba(255, 255, 255, 0.8);
+  --border-color: #ddd;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
 body {
   font-family: "Poppins", sans-serif;
   background: var(--bg-color);
@@ -120,17 +130,10 @@ header {
   width: 100%; 
   max-width: 400px;
   border-radius: 20px;
-  filter: grayscale(100%) brightness(70%) blur(1px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.5);
   transition: 0.5s;
 }
-body.light-mode .hero-img img { filter: grayscale(100%) brightness(80%) blur(1px); }
-
-.hero-img::after {
-  content:""; position: absolute; top:0; left:0; right:0; bottom:0;
-  background: linear-gradient(to left, rgba(0,0,0,0.3), transparent);
-  border-radius: 20px; pointer-events: none;
-}
+.hero-img:hover img { transform: scale(1.02); }
 
 /* Social Icons */
 .socials a { font-size: 1.8rem; margin-right: 20px; color: #888; transition: 0.3s; }
