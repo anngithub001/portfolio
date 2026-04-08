@@ -185,7 +185,8 @@
 </button>
 
 <script>
-const textArray = ["MCA Student","AI/ML Developer","Web Developer"];
+// Typing Effect
+const textArray = ["MCA Student", "AI/ML Developer", "Web Developer"];
 let typingElement = document.getElementById("typing");
 let arrayIndex = 0, charIndex = 0, currentText = "", isDeleting = false;
 
@@ -205,11 +206,86 @@ function typeEffect() {
     setTimeout(typeEffect, isDeleting ? 50 : 100);
   }
 }
+
+// Hamburger Menu Toggle
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.querySelector('.navbar ul');
+const navLinks = document.querySelectorAll('.nav-link');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('show');
+});
+
+// Close menu when a link is clicked
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('show');
+  });
+});
+
+// Back to Top Button
+const backToTopBtn = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.style.display = 'block';
+  } else {
+    backToTopBtn.style.display = 'none';
+  }
+});
+
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Theme Toggle
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+const icon = themeToggle.querySelector('i');
+
+themeToggle.addEventListener('click', () => {
+  body.classList.toggle('light-mode');
+  if (body.classList.contains('light-mode')) {
+    icon.classList.replace('fa-moon', 'fa-sun');
+    localStorage.setItem('theme', 'light');
+  } else {
+    icon.classList.replace('fa-sun', 'fa-moon');
+    localStorage.setItem('theme', 'dark');
+  }
+});
+
+// Load saved theme
+if (localStorage.getItem('theme') === 'light') {
+  body.classList.add('light-mode');
+  icon.classList.replace('fa-moon', 'fa-sun');
+}
+
+// Active link highlighting on scroll
+window.addEventListener('scroll', () => {
+  let current = '';
+  const sections = document.querySelectorAll('section');
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (pageYOffset >= sectionTop - 100) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href').includes(current)) {
+      link.classList.add('active');
+    }
+  });
+});
+
 document.addEventListener("DOMContentLoaded", typeEffect);
 </script>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init();</script>
+<script>AOS.init({ duration: 1000, once: true });</script>
 
 </body>
 </html>
