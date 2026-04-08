@@ -11,16 +11,6 @@
   --accent-hover: #08fff1;
 }
 
-body.light-mode {
-  --bg-color: #f4f4f4;
-  --text-color: #333;
-  --card-bg: #fff;
-  --header-bg: rgba(255, 255, 255, 0.8);
-  --border-color: #ddd;
-}
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
 body {
   font-family: "Poppins", sans-serif;
   background: var(--bg-color);
