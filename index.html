@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ann Maria Thomas | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1 class="logo">Ann Maria</h1>
+    <ul>
+      <li><a href="#home" class="nav-link active">Me</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#resume" class="nav-link">Resume</a></li>
+    </ul>
+
+    <button id="themeToggle" class="theme-toggle">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text" data-aos="fade-right">
+    <h2>Hi, I'm <span>Ann Maria Thomas</span></h2>
+    <p id="typing"></p>
+
+    <div class="socials">
+      <a href="https://github.com/anngithub001" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/annmariathomas03/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:annthmschoola@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+
+  <div class="hero-img" data-aos="fade-left">
+    <img src="images/profile.png" alt="Profile Photo">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 data-aos="fade-up">About Me</h2>
+  <p data-aos="fade-up">
+    I am an MCA student at Rajagiri College of Social Sciences, Kerala (2024–2026), with hands-on experience in software development, AI/ML, and web-based applications. 
+    I have worked on building database-driven systems as well as NLP-based solutions using large language models.
+
+    My experience includes developing end-to-end applications, designing modular pipelines, and implementing technologies such as RAG, embeddings, and semantic retrieval. 
+    
+    I am passionate about solving real-world problems using technology and continuously learning new tools and frameworks to grow as a developer.
+  </p>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <h2 data-aos="fade-up">Education</h2>
+
+  <div class="timeline">
+    <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-date">2024 – Present</div>
+      <div class="timeline-content">
+        <h3>Master of Computer Applications (MCA)</h3>
+        <p>Rajagiri College of Social Sciences, Kerala</p>
+      </div>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-date">2021 – 2024</div>
+      <div class="timeline-content">
+        <h3>Bachelor of Computer Applications (BCA)</h3>
+        <p>Assumption College, Autonomous</p>
+      </div>
+    </div>
+
+    <div class="timeline-item" data-aos="fade-right">
+      <div class="timeline-date">2019 – 2021</div>
+      <div class="timeline-content">
+        <h3>Higher Secondary</h3>
+        <p>Mary Rani Public School</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 data-aos="fade-up">Skills</h2>
+
+  <div class="skills" data-aos="zoom-in">
+    <div class="skill">C</div>
+    <div class="skill">C++</div>
+    <div class="skill">Java</div>
+    <div class="skill">Python</div>
+
+    <div class="skill">MySQL</div>
+    <div class="skill">Oracle SQL</div>
+    <div class="skill">PHPMyAdmin</div>
+
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">PHP</div>
+    <div class="skill">Laravel</div>
+
+    <div class="skill">NLP</div>
+    <div class="skill">AI/ML</div>
+    <div class="skill">RAG</div>
+    <div class="skill">LLMs</div>
+
+    <div class="skill">Git</div>
+    <div class="skill">VS Code</div>
+    <div class="skill">PyCharm</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 data-aos="fade-up">Projects</h2>
+
+  <!-- FIXED CLICKABLE CARD -->
+  <div class="card" data-aos="fade-up" onclick="window.open('http://127.0.0.1:5000/', '_blank')">
+    <h3>Automated AI Training Dataset Generation System</h3>
+    <p>Python, Flask, NLP, LLMs</p>
+    <p>
+      Built a system to generate QA datasets and Text-to-SQL datasets using NLP and LLMs.
+      Implemented RAG, embeddings, semantic chunking, and dataset validation.
+    </p>
+  </div>
+
+  <div class="card" data-aos="fade-up">
+    <h3>Hospital Management System</h3>
+    <p>Python, Flask, MySQL</p>
+  </div>
+
+  <div class="card" data-aos="fade-up">
+    <h3>Attendance Management System</h3>
+    <p>Java Swing, MySQL</p>
+  </div>
+
+  <div class="card" data-aos="fade-up">
+    <h3>Pet Shop Management System</h3>
+    <p>Laravel, PHPMyAdmin</p>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+  <h2 data-aos="fade-up">Resume</h2>
+  <a href="Ann Latest.pdf" target="_blank" class="btn">View Resume</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 data-aos="fade-up">Contact</h2>
+  <p>Email: annthmschoola@gmail.com</p>
+  <p>Phone: 9544165198</p>
+  <p>LinkedIn: linkedin.com/in/annmariathomas03</p>
+  <p>GitHub: github.com/anngithub001</p>
+</section>
+
+<footer>
+  <p>© 2026 Ann Maria Thomas</p>
+</footer>
+
+<button id="backToTop">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+const textArray = ["MCA Student","AI/ML Developer","Web Developer"];
+let typingElement = document.getElementById("typing");
+let arrayIndex = 0, charIndex = 0, currentText = "", isDeleting = false;
+
+function typeEffect() {
+  currentText = textArray[arrayIndex];
+  if (isDeleting) typingElement.innerHTML = currentText.substring(0, charIndex--) + "|";
+  else typingElement.innerHTML = currentText.substring(0, charIndex++) + "|";
+
+  if (!isDeleting && charIndex === currentText.length + 1) {
+    isDeleting = true;
+    setTimeout(typeEffect, 1000);
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    arrayIndex = (arrayIndex + 1) % textArray.length;
+    setTimeout(typeEffect, 500);
+  } else {
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
+  }
+}
+document.addEventListener("DOMContentLoaded", typeEffect);
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</body>
+</html>
